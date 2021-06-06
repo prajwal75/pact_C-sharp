@@ -1,0 +1,464 @@
+{
+  "consumer": {
+    "name": "Dev"
+  },
+  "provider": {
+    "name": "UA"
+  },
+  "interactions": [
+    {
+      "description": "A Get resource request is created",
+      "providerState": "Invoking Get all user resource request",
+      "request": {
+        "method": "get",
+        "path": "/api/unknown"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "page": 2,
+          "per_page": 6,
+          "total": 12,
+          "total_pages": 2,
+          "data": [
+            {
+              "id": 2,
+              "name": "abc@xyz.in",
+              "year": 1998,
+              "color": "xyz",
+              "pantone_value": "Image"
+            },
+            {
+              "id": 2,
+              "name": "abc@xyz.in",
+              "year": 1998,
+              "color": "xyz",
+              "pantone_value": "Image"
+            },
+            {
+              "id": 2,
+              "name": "abc@xyz.in",
+              "year": 1998,
+              "color": "xyz",
+              "pantone_value": "Image"
+            }
+          ],
+          "support": {
+            "url": "aaaaaaaaa",
+            "text": "bbbbbbbbb"
+          }
+        },
+        "matchingRules": {
+          "$.body.page": {
+            "match": "type"
+          },
+          "$.body.per_page": {
+            "match": "type"
+          },
+          "$.body.total": {
+            "match": "type"
+          },
+          "$.body.total_pages": {
+            "match": "type"
+          },
+          "$.body.data": {
+            "min": 3
+          },
+          "$.body.data[*].*": {
+            "match": "type"
+          },
+          "$.body.data[*].id": {
+            "match": "type"
+          },
+          "$.body.data[*].name": {
+            "match": "type"
+          },
+          "$.body.data[*].year": {
+            "match": "type"
+          },
+          "$.body.data[*].color": {
+            "match": "type"
+          },
+          "$.body.data[*].pantone_value": {
+            "match": "type"
+          },
+          "$.body.support.url": {
+            "match": "type"
+          },
+          "$.body.support.text": {
+            "match": "type"
+          }
+        }
+      }
+    },
+    {
+      "description": "A Patch request is created",
+      "providerState": "Invoking Patch request",
+      "request": {
+        "method": "patch",
+        "path": "/api/users/2",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "name": "Prajwal",
+          "job": "Engineer"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "name": "Prajwal",
+          "job": "Engineer",
+          "updatedAt": "2021-05-27T07:45:47.513Z"
+        },
+        "matchingRules": {
+          "$.body.name": {
+            "match": "type"
+          },
+          "$.body.job": {
+            "match": "type"
+          },
+          "$.body.updatedAt": {
+            "match": "type"
+          }
+        }
+      }
+    },
+    {
+      "description": "A Get request is created",
+      "providerState": "Invoking Get request",
+      "request": {
+        "method": "get",
+        "path": "/api/users/2"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "data": {
+            "id": 2,
+            "email": "abc@xyz.in",
+            "first_name": "abc",
+            "last_name": "xyz",
+            "avatar": "Image"
+          },
+          "support": {
+            "url": "aaaaaaaaa",
+            "text": "bbbbbbbbb"
+          }
+        },
+        "matchingRules": {
+          "$.body.data.id": {
+            "match": "type"
+          },
+          "$.body.data.email": {
+            "match": "type"
+          },
+          "$.body.data.first_name": {
+            "match": "type"
+          },
+          "$.body.data.last_name": {
+            "match": "type"
+          },
+          "$.body.data.avatar": {
+            "match": "type"
+          },
+          "$.body.support.url": {
+            "match": "type"
+          },
+          "$.body.support.text": {
+            "match": "type"
+          }
+        }
+      }
+    },
+    {
+      "description": "A Get resource request is created",
+      "providerState": "Invoking Get all resource request",
+      "request": {
+        "method": "get",
+        "path": "/api/users",
+        "query": "page=2"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "page": 2,
+          "per_page": 6,
+          "total": 12,
+          "total_pages": 2,
+          "data": [
+            {
+              "id": 2,
+              "email": "abc@xyz.in",
+              "first_name": "abc",
+              "last_name": "xyz",
+              "avatar": "Image"
+            },
+            {
+              "id": 2,
+              "email": "abc@xyz.in",
+              "first_name": "abc",
+              "last_name": "xyz",
+              "avatar": "Image"
+            },
+            {
+              "id": 2,
+              "email": "abc@xyz.in",
+              "first_name": "abc",
+              "last_name": "xyz",
+              "avatar": "Image"
+            }
+          ],
+          "support": {
+            "url": "aaaaaaaaa",
+            "text": "bbbbbbbbb"
+          }
+        },
+        "matchingRules": {
+          "$.body.page": {
+            "match": "type"
+          },
+          "$.body.per_page": {
+            "match": "type"
+          },
+          "$.body.total": {
+            "match": "type"
+          },
+          "$.body.total_pages": {
+            "match": "type"
+          },
+          "$.body.data": {
+            "min": 3
+          },
+          "$.body.data[*].*": {
+            "match": "type"
+          },
+          "$.body.data[*].id": {
+            "match": "type"
+          },
+          "$.body.data[*].email": {
+            "match": "type"
+          },
+          "$.body.data[*].first_name": {
+            "match": "type"
+          },
+          "$.body.data[*].last_name": {
+            "match": "type"
+          },
+          "$.body.data[*].avatar": {
+            "match": "type"
+          },
+          "$.body.support.url": {
+            "match": "type"
+          },
+          "$.body.support.text": {
+            "match": "type"
+          }
+        }
+      }
+    },
+    {
+      "description": "A Post login request is created",
+      "providerState": "Invoking Post login request",
+      "request": {
+        "method": "post",
+        "path": "/api/login",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "email": "eve.holt@reqres.in",
+          "password": "cityslicka"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "token": "QpwL5tke4Pnpja7X4"
+        },
+        "matchingRules": {
+          "$.body.token": {
+            "match": "type"
+          }
+        }
+      }
+    },
+    {
+      "description": "A Get resource request is created",
+      "providerState": "Invoking Get resource request",
+      "request": {
+        "method": "get",
+        "path": "/api/unknown/2"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "data": {
+            "id": 2,
+            "name": "abc@xyz.in",
+            "year": 1995,
+            "color": "xyz",
+            "pantone_value": "Image"
+          },
+          "support": {
+            "url": "aaaaaaaaa",
+            "text": "bbbbbbbbb"
+          }
+        },
+        "matchingRules": {
+          "$.body.data.id": {
+            "match": "type"
+          },
+          "$.body.data.name": {
+            "match": "type"
+          },
+          "$.body.data.year": {
+            "match": "type"
+          },
+          "$.body.data.color": {
+            "match": "type"
+          },
+          "$.body.data.pantone_value": {
+            "match": "type"
+          },
+          "$.body.support.url": {
+            "match": "type"
+          },
+          "$.body.support.text": {
+            "match": "type"
+          }
+        }
+      }
+    },
+    {
+      "description": "A Post request is created",
+      "providerState": "Invoking Post request",
+      "request": {
+        "method": "post",
+        "path": "/api/users",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "name": "Prajwal",
+          "job": "Engineer"
+        }
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "name": "Prajwal",
+          "job": "Engineer",
+          "id": "378",
+          "createdAt": "2021-05-27T07:45:47.513Z"
+        },
+        "matchingRules": {
+          "$.body.name": {
+            "match": "type"
+          },
+          "$.body.job": {
+            "match": "type"
+          },
+          "$.body.id": {
+            "match": "type"
+          },
+          "$.body.createdAt": {
+            "match": "type"
+          }
+        }
+      }
+    },
+    {
+      "description": "A Put request is created",
+      "providerState": "Invoking Put request",
+      "request": {
+        "method": "put",
+        "path": "/api/users/2",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "name": "Prajwal",
+          "job": "Engineer"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "name": "Prajwal",
+          "job": "Engineer",
+          "updatedAt": "2021-05-27T07:45:47.513Z"
+        },
+        "matchingRules": {
+          "$.body.name": {
+            "match": "type"
+          },
+          "$.body.job": {
+            "match": "type"
+          },
+          "$.body.updatedAt": {
+            "match": "type"
+          }
+        }
+      }
+    },
+    {
+      "description": "A Post unsuccess request is created",
+      "providerState": "Invoking Post unscuccess request",
+      "request": {
+        "method": "post",
+        "path": "/api/register",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "email": "sydney@fife"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "error": "Missing password"
+        },
+        "matchingRules": {
+          "$.body.error": {
+            "match": "type"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

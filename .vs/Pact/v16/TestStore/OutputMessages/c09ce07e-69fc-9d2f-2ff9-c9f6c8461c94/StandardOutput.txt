@@ -1,0 +1,164 @@
+WARN: Only the first item will be used to match the items in the array at $['body']['data']
+WARN: Only the first item will be used to match the items in the array at $['body']['data']
+INFO: Reading pact at ../../../pacttest/dev-ua.json
+
+
+Verifying a pact between Dev and UA
+  Given Invoking Get all resource request
+    A Get resource request is created
+      with GET /api/users?page=2
+        returns a response which
+DEBUG: Setting up provider state 'Invoking Get all resource request' for consumer 'Dev' using provider state set up URL https://localhost:5003/provider-states
+I, [2021-06-06T22:11:26.802125 #16348]  INFO -- request: POST https://localhost:5003/provider-states
+D, [2021-06-06T22:11:26.802125 #16348] DEBUG -- request: User-Agent: "Faraday v0.17.3"
+Content-Type: "application/json"
+I, [2021-06-06T22:11:31.459210 #16348]  INFO -- response: Status 200
+D, [2021-06-06T22:11:31.459210 #16348] DEBUG -- response: connection: "close"
+date: "Sun, 06 Jun 2021 16:41:30 GMT"
+server: "Kestrel"
+transfer-encoding: "chunked"
+          has status code 200
+          has a matching body
+          includes headers
+            "Content-Type" which equals "application/json; charset=utf-8"
+  Given Invoking Get all user resource request
+    A Get resource request is created
+      with GET /api/unknown
+        returns a response which
+DEBUG: Setting up provider state 'Invoking Get all user resource request' for consumer 'Dev' using provider state set up URL https://localhost:5003/provider-states
+I, [2021-06-06T22:11:32.320197 #16348]  INFO -- request: POST https://localhost:5003/provider-states
+D, [2021-06-06T22:11:32.320197 #16348] DEBUG -- request: User-Agent: "Faraday v0.17.3"
+Content-Type: "application/json"
+I, [2021-06-06T22:11:32.384372 #16348]  INFO -- response: Status 200
+D, [2021-06-06T22:11:32.385378 #16348] DEBUG -- response: connection: "close"
+date: "Sun, 06 Jun 2021 16:41:31 GMT"
+server: "Kestrel"
+transfer-encoding: "chunked"
+          has status code 200
+          has a matching body
+          includes headers
+            "Content-Type" which equals "application/json; charset=utf-8"
+  Given Invoking Patch request
+    A Patch request is created
+      with PATCH /api/users/2
+        returns a response which
+DEBUG: Setting up provider state 'Invoking Patch request' for consumer 'Dev' using provider state set up URL https://localhost:5003/provider-states
+I, [2021-06-06T22:11:32.909953 #16348]  INFO -- request: POST https://localhost:5003/provider-states
+D, [2021-06-06T22:11:32.910958 #16348] DEBUG -- request: User-Agent: "Faraday v0.17.3"
+Content-Type: "application/json"
+I, [2021-06-06T22:11:32.979886 #16348]  INFO -- response: Status 200
+D, [2021-06-06T22:11:32.980665 #16348] DEBUG -- response: connection: "close"
+date: "Sun, 06 Jun 2021 16:41:32 GMT"
+server: "Kestrel"
+transfer-encoding: "chunked"
+          has status code 200
+          has a matching body
+          includes headers
+            "Content-Type" which equals "application/json; charset=utf-8"
+  Given Invoking Get request
+    A Get request is created
+      with GET /api/users/2
+        returns a response which
+DEBUG: Setting up provider state 'Invoking Get request' for consumer 'Dev' using provider state set up URL https://localhost:5003/provider-states
+I, [2021-06-06T22:11:33.925250 #16348]  INFO -- request: POST https://localhost:5003/provider-states
+D, [2021-06-06T22:11:33.925250 #16348] DEBUG -- request: User-Agent: "Faraday v0.17.3"
+Content-Type: "application/json"
+I, [2021-06-06T22:11:33.997358 #16348]  INFO -- response: Status 200
+D, [2021-06-06T22:11:33.997358 #16348] DEBUG -- response: connection: "close"
+date: "Sun, 06 Jun 2021 16:41:33 GMT"
+server: "Kestrel"
+transfer-encoding: "chunked"
+          has status code 200
+          has a matching body
+          includes headers
+            "Content-Type" which equals "application/json; charset=utf-8"
+  Given Invoking Post login request
+    A Post login request is created
+      with POST /api/login
+        returns a response which
+DEBUG: Setting up provider state 'Invoking Post login request' for consumer 'Dev' using provider state set up URL https://localhost:5003/provider-states
+I, [2021-06-06T22:11:34.488937 #16348]  INFO -- request: POST https://localhost:5003/provider-states
+D, [2021-06-06T22:11:34.489090 #16348] DEBUG -- request: User-Agent: "Faraday v0.17.3"
+Content-Type: "application/json"
+I, [2021-06-06T22:11:34.558393 #16348]  INFO -- response: Status 200
+D, [2021-06-06T22:11:34.558967 #16348] DEBUG -- response: connection: "close"
+date: "Sun, 06 Jun 2021 16:41:34 GMT"
+server: "Kestrel"
+transfer-encoding: "chunked"
+          has status code 200
+          has a matching body
+          includes headers
+            "Content-Type" which equals "application/json; charset=utf-8"
+  Given Invoking Get resource request
+    A Get resource request is created
+      with GET /api/unknown/2
+        returns a response which
+DEBUG: Setting up provider state 'Invoking Get resource request' for consumer 'Dev' using provider state set up URL https://localhost:5003/provider-states
+I, [2021-06-06T22:11:35.517553 #16348]  INFO -- request: POST https://localhost:5003/provider-states
+D, [2021-06-06T22:11:35.517553 #16348] DEBUG -- request: User-Agent: "Faraday v0.17.3"
+Content-Type: "application/json"
+I, [2021-06-06T22:11:35.586910 #16348]  INFO -- response: Status 200
+D, [2021-06-06T22:11:35.587490 #16348] DEBUG -- response: connection: "close"
+date: "Sun, 06 Jun 2021 16:41:35 GMT"
+server: "Kestrel"
+transfer-encoding: "chunked"
+          has status code 200
+          has a matching body
+          includes headers
+            "Content-Type" which equals "application/json; charset=utf-8"
+  Given Invoking Post request
+    A Post request is created
+      with POST /api/users
+        returns a response which
+DEBUG: Setting up provider state 'Invoking Post request' for consumer 'Dev' using provider state set up URL https://localhost:5003/provider-states
+I, [2021-06-06T22:11:36.551430 #16348]  INFO -- request: POST https://localhost:5003/provider-states
+D, [2021-06-06T22:11:36.551430 #16348] DEBUG -- request: User-Agent: "Faraday v0.17.3"
+Content-Type: "application/json"
+I, [2021-06-06T22:11:36.636671 #16348]  INFO -- response: Status 200
+D, [2021-06-06T22:11:36.636671 #16348] DEBUG -- response: connection: "close"
+date: "Sun, 06 Jun 2021 16:41:36 GMT"
+server: "Kestrel"
+transfer-encoding: "chunked"
+          has status code 201
+          has a matching body
+          includes headers
+            "Content-Type" which equals "application/json; charset=utf-8"
+  Given Invoking Put request
+    A Put request is created
+      with PUT /api/users/2
+        returns a response which
+DEBUG: Setting up provider state 'Invoking Put request' for consumer 'Dev' using provider state set up URL https://localhost:5003/provider-states
+I, [2021-06-06T22:11:37.474728 #16348]  INFO -- request: POST https://localhost:5003/provider-states
+D, [2021-06-06T22:11:37.475762 #16348] DEBUG -- request: User-Agent: "Faraday v0.17.3"
+Content-Type: "application/json"
+I, [2021-06-06T22:11:37.546110 #16348]  INFO -- response: Status 200
+D, [2021-06-06T22:11:37.546110 #16348] DEBUG -- response: connection: "close"
+date: "Sun, 06 Jun 2021 16:41:37 GMT"
+server: "Kestrel"
+transfer-encoding: "chunked"
+          has status code 200
+          has a matching body
+          includes headers
+            "Content-Type" which equals "application/json; charset=utf-8"
+  Given Invoking Post unscuccess request
+    A Post unsuccess request is created
+      with POST /api/register
+        returns a response which
+DEBUG: Setting up provider state 'Invoking Post unscuccess request' for consumer 'Dev' using provider state set up URL https://localhost:5003/provider-states
+I, [2021-06-06T22:11:38.806396 #16348]  INFO -- request: POST https://localhost:5003/provider-states
+D, [2021-06-06T22:11:38.806396 #16348] DEBUG -- request: User-Agent: "Faraday v0.17.3"
+Content-Type: "application/json"
+I, [2021-06-06T22:11:38.866881 #16348]  INFO -- response: Status 200
+D, [2021-06-06T22:11:38.867879 #16348] DEBUG -- response: connection: "close"
+date: "Sun, 06 Jun 2021 16:41:38 GMT"
+server: "Kestrel"
+transfer-encoding: "chunked"
+          has status code 400
+          has a matching body
+          includes headers
+            "Content-Type" which equals "application/json; charset=utf-8"
+
+9 interactions, 0 failures
+WARN: Only the first item will be used to match the items in the array at $['body']['data']
+WARN: Only the first item will be used to match the items in the array at $['body']['data']
+

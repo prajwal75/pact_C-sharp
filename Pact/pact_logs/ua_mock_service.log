@@ -1,0 +1,849 @@
+I, [2021-06-06T22:11:25.733113 #6436]  INFO -- : Cleared interactions for example ""
+I, [2021-06-06T22:11:26.417172 #6436]  INFO -- : Registered expected interaction GET /api/unknown
+D, [2021-06-06T22:11:26.417747 #6436] DEBUG -- : {
+  "description": "A Get resource request is created",
+  "providerState": "Invoking Get all user resource request",
+  "request": {
+    "method": "get",
+    "path": "/api/unknown"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "page": {
+        "json_class": "Pact::SomethingLike",
+        "contents": 2
+      },
+      "per_page": {
+        "json_class": "Pact::SomethingLike",
+        "contents": 6
+      },
+      "total": {
+        "json_class": "Pact::SomethingLike",
+        "contents": 12
+      },
+      "total_pages": {
+        "json_class": "Pact::SomethingLike",
+        "contents": 2
+      },
+      "data": {
+        "json_class": "Pact::ArrayLike",
+        "contents": {
+          "id": {
+            "json_class": "Pact::SomethingLike",
+            "contents": 2
+          },
+          "name": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "abc@xyz.in"
+          },
+          "year": {
+            "json_class": "Pact::SomethingLike",
+            "contents": 1998
+          },
+          "color": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "xyz"
+          },
+          "pantone_value": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "Image"
+          }
+        },
+        "min": 3
+      },
+      "support": {
+        "url": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "aaaaaaaaa"
+        },
+        "text": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "bbbbbbbbb"
+        }
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2021-06-06T22:11:26.431761 #6436]  INFO -- : Received request GET /api/unknown
+D, [2021-06-06T22:11:26.432438 #6436] DEBUG -- : {
+  "path": "/api/unknown",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:9229",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-06-06T22:11:26.432661 #6436]  INFO -- : Found matching response for GET /api/unknown
+D, [2021-06-06T22:11:26.433364 #6436] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "page": {
+      "json_class": "Pact::SomethingLike",
+      "contents": 2
+    },
+    "per_page": {
+      "json_class": "Pact::SomethingLike",
+      "contents": 6
+    },
+    "total": {
+      "json_class": "Pact::SomethingLike",
+      "contents": 12
+    },
+    "total_pages": {
+      "json_class": "Pact::SomethingLike",
+      "contents": 2
+    },
+    "data": {
+      "json_class": "Pact::ArrayLike",
+      "contents": {
+        "id": {
+          "json_class": "Pact::SomethingLike",
+          "contents": 2
+        },
+        "name": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "abc@xyz.in"
+        },
+        "year": {
+          "json_class": "Pact::SomethingLike",
+          "contents": 1998
+        },
+        "color": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "xyz"
+        },
+        "pantone_value": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "Image"
+        }
+      },
+      "min": 3
+    },
+    "support": {
+      "url": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "aaaaaaaaa"
+      },
+      "text": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "bbbbbbbbb"
+      }
+    }
+  }
+}
+I, [2021-06-06T22:11:26.540064 #6436]  INFO -- : Verifying - interactions matched for example ""
+I, [2021-06-06T22:11:26.555379 #6436]  INFO -- : Cleared interactions for example ""
+I, [2021-06-06T22:11:26.571314 #6436]  INFO -- : Registered expected interaction PATCH /api/users/2
+D, [2021-06-06T22:11:26.572324 #6436] DEBUG -- : {
+  "description": "A Patch request is created",
+  "providerState": "Invoking Patch request",
+  "request": {
+    "method": "patch",
+    "path": "/api/users/2",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "name": "Prajwal",
+      "job": "Engineer"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "name": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "Prajwal"
+      },
+      "job": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "Engineer"
+      },
+      "updatedAt": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "2021-05-27T07:45:47.513Z"
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2021-06-06T22:11:26.588274 #6436]  INFO -- : Received request PATCH /api/users/2
+D, [2021-06-06T22:11:26.589270 #6436] DEBUG -- : {
+  "path": "/api/users/2",
+  "query": "",
+  "method": "patch",
+  "body": {
+    "name": "Prajwal",
+    "job": "Engineer"
+  },
+  "headers": {
+    "Content-Length": "35",
+    "Content-Type": "application/json; charset=utf-8",
+    "Host": "localhost:9229",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-06-06T22:11:26.589545 #6436]  INFO -- : Found matching response for PATCH /api/users/2
+D, [2021-06-06T22:11:26.589906 #6436] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "name": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "Prajwal"
+    },
+    "job": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "Engineer"
+    },
+    "updatedAt": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "2021-05-27T07:45:47.513Z"
+    }
+  }
+}
+I, [2021-06-06T22:11:26.602674 #6436]  INFO -- : Verifying - interactions matched for example ""
+I, [2021-06-06T22:11:26.618731 #6436]  INFO -- : Cleared interactions for example ""
+I, [2021-06-06T22:11:26.634396 #6436]  INFO -- : Registered expected interaction GET /api/users/2
+D, [2021-06-06T22:11:26.634396 #6436] DEBUG -- : {
+  "description": "A Get request is created",
+  "providerState": "Invoking Get request",
+  "request": {
+    "method": "get",
+    "path": "/api/users/2"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "data": {
+        "id": {
+          "json_class": "Pact::SomethingLike",
+          "contents": 2
+        },
+        "email": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "abc@xyz.in"
+        },
+        "first_name": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "abc"
+        },
+        "last_name": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "xyz"
+        },
+        "avatar": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "Image"
+        }
+      },
+      "support": {
+        "url": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "aaaaaaaaa"
+        },
+        "text": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "bbbbbbbbb"
+        }
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2021-06-06T22:11:26.649555 #6436]  INFO -- : Received request GET /api/users/2
+D, [2021-06-06T22:11:26.649555 #6436] DEBUG -- : {
+  "path": "/api/users/2",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:9229",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-06-06T22:11:26.650551 #6436]  INFO -- : Found matching response for GET /api/users/2
+D, [2021-06-06T22:11:26.650551 #6436] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "data": {
+      "id": {
+        "json_class": "Pact::SomethingLike",
+        "contents": 2
+      },
+      "email": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "abc@xyz.in"
+      },
+      "first_name": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "abc"
+      },
+      "last_name": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "xyz"
+      },
+      "avatar": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "Image"
+      }
+    },
+    "support": {
+      "url": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "aaaaaaaaa"
+      },
+      "text": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "bbbbbbbbb"
+      }
+    }
+  }
+}
+I, [2021-06-06T22:11:26.665705 #6436]  INFO -- : Verifying - interactions matched for example ""
+I, [2021-06-06T22:11:26.680148 #6436]  INFO -- : Cleared interactions for example ""
+I, [2021-06-06T22:11:26.696106 #6436]  INFO -- : Registered expected interaction GET /api/users?page=2
+D, [2021-06-06T22:11:26.697105 #6436] DEBUG -- : {
+  "description": "A Get resource request is created",
+  "providerState": "Invoking Get all resource request",
+  "request": {
+    "method": "get",
+    "path": "/api/users",
+    "query": "page=2"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "page": {
+        "json_class": "Pact::SomethingLike",
+        "contents": 2
+      },
+      "per_page": {
+        "json_class": "Pact::SomethingLike",
+        "contents": 6
+      },
+      "total": {
+        "json_class": "Pact::SomethingLike",
+        "contents": 12
+      },
+      "total_pages": {
+        "json_class": "Pact::SomethingLike",
+        "contents": 2
+      },
+      "data": {
+        "json_class": "Pact::ArrayLike",
+        "contents": {
+          "id": {
+            "json_class": "Pact::SomethingLike",
+            "contents": 2
+          },
+          "email": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "abc@xyz.in"
+          },
+          "first_name": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "abc"
+          },
+          "last_name": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "xyz"
+          },
+          "avatar": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "Image"
+          }
+        },
+        "min": 3
+      },
+      "support": {
+        "url": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "aaaaaaaaa"
+        },
+        "text": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "bbbbbbbbb"
+        }
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2021-06-06T22:11:26.713059 #6436]  INFO -- : Received request GET /api/users?page=2
+D, [2021-06-06T22:11:26.713059 #6436] DEBUG -- : {
+  "path": "/api/users",
+  "query": "page=2",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:9229",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-06-06T22:11:26.713701 #6436]  INFO -- : Found matching response for GET /api/users?page=2
+D, [2021-06-06T22:11:26.713701 #6436] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "page": {
+      "json_class": "Pact::SomethingLike",
+      "contents": 2
+    },
+    "per_page": {
+      "json_class": "Pact::SomethingLike",
+      "contents": 6
+    },
+    "total": {
+      "json_class": "Pact::SomethingLike",
+      "contents": 12
+    },
+    "total_pages": {
+      "json_class": "Pact::SomethingLike",
+      "contents": 2
+    },
+    "data": {
+      "json_class": "Pact::ArrayLike",
+      "contents": {
+        "id": {
+          "json_class": "Pact::SomethingLike",
+          "contents": 2
+        },
+        "email": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "abc@xyz.in"
+        },
+        "first_name": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "abc"
+        },
+        "last_name": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "xyz"
+        },
+        "avatar": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "Image"
+        }
+      },
+      "min": 3
+    },
+    "support": {
+      "url": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "aaaaaaaaa"
+      },
+      "text": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "bbbbbbbbb"
+      }
+    }
+  }
+}
+I, [2021-06-06T22:11:26.728077 #6436]  INFO -- : Verifying - interactions matched for example ""
+I, [2021-06-06T22:11:26.744650 #6436]  INFO -- : Cleared interactions for example ""
+I, [2021-06-06T22:11:26.759608 #6436]  INFO -- : Registered expected interaction POST /api/login
+D, [2021-06-06T22:11:26.759608 #6436] DEBUG -- : {
+  "description": "A Post login request is created",
+  "providerState": "Invoking Post login request",
+  "request": {
+    "method": "post",
+    "path": "/api/login",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "token": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "QpwL5tke4Pnpja7X4"
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2021-06-06T22:11:26.775567 #6436]  INFO -- : Received request POST /api/login
+D, [2021-06-06T22:11:26.776562 #6436] DEBUG -- : {
+  "path": "/api/login",
+  "query": "",
+  "method": "post",
+  "body": {
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+  },
+  "headers": {
+    "Content-Length": "54",
+    "Content-Type": "application/json; charset=utf-8",
+    "Host": "localhost:9229",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-06-06T22:11:26.776770 #6436]  INFO -- : Found matching response for POST /api/login
+D, [2021-06-06T22:11:26.777079 #6436] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "token": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "QpwL5tke4Pnpja7X4"
+    }
+  }
+}
+I, [2021-06-06T22:11:26.790985 #6436]  INFO -- : Verifying - interactions matched for example ""
+I, [2021-06-06T22:11:26.807114 #6436]  INFO -- : Cleared interactions for example ""
+I, [2021-06-06T22:11:26.824068 #6436]  INFO -- : Registered expected interaction GET /api/unknown/2
+D, [2021-06-06T22:11:26.824068 #6436] DEBUG -- : {
+  "description": "A Get resource request is created",
+  "providerState": "Invoking Get resource request",
+  "request": {
+    "method": "get",
+    "path": "/api/unknown/2"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "data": {
+        "id": {
+          "json_class": "Pact::SomethingLike",
+          "contents": 2
+        },
+        "name": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "abc@xyz.in"
+        },
+        "year": {
+          "json_class": "Pact::SomethingLike",
+          "contents": 1995
+        },
+        "color": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "xyz"
+        },
+        "pantone_value": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "Image"
+        }
+      },
+      "support": {
+        "url": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "aaaaaaaaa"
+        },
+        "text": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "bbbbbbbbb"
+        }
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2021-06-06T22:11:26.839028 #6436]  INFO -- : Received request GET /api/unknown/2
+D, [2021-06-06T22:11:26.839028 #6436] DEBUG -- : {
+  "path": "/api/unknown/2",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:9229",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-06-06T22:11:26.839028 #6436]  INFO -- : Found matching response for GET /api/unknown/2
+D, [2021-06-06T22:11:26.840025 #6436] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "data": {
+      "id": {
+        "json_class": "Pact::SomethingLike",
+        "contents": 2
+      },
+      "name": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "abc@xyz.in"
+      },
+      "year": {
+        "json_class": "Pact::SomethingLike",
+        "contents": 1995
+      },
+      "color": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "xyz"
+      },
+      "pantone_value": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "Image"
+      }
+    },
+    "support": {
+      "url": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "aaaaaaaaa"
+      },
+      "text": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "bbbbbbbbb"
+      }
+    }
+  }
+}
+I, [2021-06-06T22:11:26.851996 #6436]  INFO -- : Verifying - interactions matched for example ""
+I, [2021-06-06T22:11:26.867950 #6436]  INFO -- : Cleared interactions for example ""
+I, [2021-06-06T22:11:26.882911 #6436]  INFO -- : Registered expected interaction POST /api/users
+D, [2021-06-06T22:11:26.882911 #6436] DEBUG -- : {
+  "description": "A Post request is created",
+  "providerState": "Invoking Post request",
+  "request": {
+    "method": "post",
+    "path": "/api/users",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "name": "Prajwal",
+      "job": "Engineer"
+    }
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "name": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "Prajwal"
+      },
+      "job": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "Engineer"
+      },
+      "id": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "378"
+      },
+      "createdAt": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "2021-05-27T07:45:47.513Z"
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2021-06-06T22:11:26.898902 #6436]  INFO -- : Received request POST /api/users
+D, [2021-06-06T22:11:26.898902 #6436] DEBUG -- : {
+  "path": "/api/users",
+  "query": "",
+  "method": "post",
+  "body": {
+    "name": "Prajwal",
+    "job": "Engineer"
+  },
+  "headers": {
+    "Content-Length": "35",
+    "Content-Type": "application/json; charset=utf-8",
+    "Host": "localhost:9229",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-06-06T22:11:26.899866 #6436]  INFO -- : Found matching response for POST /api/users
+D, [2021-06-06T22:11:26.899866 #6436] DEBUG -- : {
+  "status": 201,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "name": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "Prajwal"
+    },
+    "job": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "Engineer"
+    },
+    "id": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "378"
+    },
+    "createdAt": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "2021-05-27T07:45:47.513Z"
+    }
+  }
+}
+I, [2021-06-06T22:11:26.913827 #6436]  INFO -- : Verifying - interactions matched for example ""
+I, [2021-06-06T22:11:26.928788 #6436]  INFO -- : Cleared interactions for example ""
+I, [2021-06-06T22:11:26.943747 #6436]  INFO -- : Registered expected interaction PUT /api/users/2
+D, [2021-06-06T22:11:26.944746 #6436] DEBUG -- : {
+  "description": "A Put request is created",
+  "providerState": "Invoking Put request",
+  "request": {
+    "method": "put",
+    "path": "/api/users/2",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "name": "Prajwal",
+      "job": "Engineer"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "name": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "Prajwal"
+      },
+      "job": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "Engineer"
+      },
+      "updatedAt": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "2021-05-27T07:45:47.513Z"
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2021-06-06T22:11:26.961699 #6436]  INFO -- : Received request PUT /api/users/2
+D, [2021-06-06T22:11:26.961699 #6436] DEBUG -- : {
+  "path": "/api/users/2",
+  "query": "",
+  "method": "put",
+  "body": {
+    "name": "Prajwal",
+    "job": "Engineer"
+  },
+  "headers": {
+    "Content-Length": "35",
+    "Content-Type": "application/json; charset=utf-8",
+    "Host": "localhost:9229",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-06-06T22:11:26.961699 #6436]  INFO -- : Found matching response for PUT /api/users/2
+D, [2021-06-06T22:11:26.961699 #6436] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "name": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "Prajwal"
+    },
+    "job": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "Engineer"
+    },
+    "updatedAt": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "2021-05-27T07:45:47.513Z"
+    }
+  }
+}
+I, [2021-06-06T22:11:26.974666 #6436]  INFO -- : Verifying - interactions matched for example ""
+I, [2021-06-06T22:11:26.990627 #6436]  INFO -- : Cleared interactions for example ""
+I, [2021-06-06T22:11:27.007576 #6436]  INFO -- : Registered expected interaction POST /api/register
+D, [2021-06-06T22:11:27.007576 #6436] DEBUG -- : {
+  "description": "A Post unsuccess request is created",
+  "providerState": "Invoking Post unscuccess request",
+  "request": {
+    "method": "post",
+    "path": "/api/register",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "email": "sydney@fife"
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "error": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "Missing password"
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2021-06-06T22:11:27.022539 #6436]  INFO -- : Received request POST /api/register
+D, [2021-06-06T22:11:27.022539 #6436] DEBUG -- : {
+  "path": "/api/register",
+  "query": "",
+  "method": "post",
+  "body": {
+    "email": "sydney@fife"
+  },
+  "headers": {
+    "Content-Length": "23",
+    "Content-Type": "application/json; charset=utf-8",
+    "Host": "localhost:9229",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-06-06T22:11:27.022539 #6436]  INFO -- : Found matching response for POST /api/register
+D, [2021-06-06T22:11:27.023534 #6436] DEBUG -- : {
+  "status": 400,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "error": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "Missing password"
+    }
+  }
+}
+I, [2021-06-06T22:11:27.036500 #6436]  INFO -- : Verifying - interactions matched for example ""
+I, [2021-06-06T22:11:27.051460 #6436]  INFO -- : Writing pact for UA to ../../../pacttest/dev-ua.json
+I, [2021-06-06T22:11:27.080383 #6436]  INFO -- : Cleared interactions for example ""
